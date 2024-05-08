@@ -1,9 +1,9 @@
 // App.js
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Elements/Navbar";
 import Textform from "./Elements/Textform";
-import About from "./Elements/About";
+// import About from "./Elements/About";
 import Alert from "./Elements/Alert";
 
 function App() {
@@ -36,19 +36,17 @@ function App() {
   };
 
   return (
-    <Router>
+    // <Router>
       <div className="App">
         <Navbar title="Textutils" Text={text} toggleMode={toggleMode} />
         <Alert alert={alert} />
-        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route
-            path="/"
-            element={<Textform showAlert={showAlert} heading="Enter Text To Analyze" mode={mode} />}
-          />
-        </Routes>
+        {/* <Routes> */}
+          {/* <Route path="/about" element={<About />} /> */}
+         <Textform showAlert={showAlert} heading="Enter Text To Analyze" mode={mode} />
+          
+        {/* </Routes> */}
       </div>
-    </Router>
+    // </Router>
   );
 }
 

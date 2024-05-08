@@ -15,9 +15,7 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/">Home</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/about">About</a>
-              </li>
+            
             </ul>
             <div className="form-check form-switch">
               <label className="form-check-label" style={{ color: "white", paddingRight: 30 }}>{props.Text}</label>
