@@ -49,7 +49,7 @@ export default function Textform(props) {
   return (
     <>
       <div className={`container`} style={{ backgroundColor: mode === 'dark' ? 'black' : 'white', color: mode === 'dark' ? 'white' : 'black' }}>
-        <h1 style={{ textAlign: 'left', color: mode === 'dark' ? 'white' : 'black',fontSize: '35px',marginTop:"90px", marginBottom: '25px' }}>{props.heading}</h1>
+        <h1 style={{ textAlign: 'left', color: mode === 'dark' ? 'white' : 'black',fontSize: '35px',marginTop:"40px", marginBottom: '35px' }}>{props.heading}</h1>
         <div className="mb-3">
           <textarea
             className={`form-control`}
@@ -57,15 +57,15 @@ export default function Textform(props) {
             rows="9"
             value={text}
             onChange={handelUpchange}
-            style={{ borderColor: props.mode === 'light' ? 'black' : 'white', borderWidth: '3px', borderStyle: "solid", borderRadius: "15px", color: mode === 'dark' ? 'white' : 'black', backgroundColor: mode === 'dark' ? '#282828' : 'white' }}
+            style={{ borderColor: props.mode === 'light' ? 'black' : 'white', borderWidth: '3px', borderStyle: "solid",marginBottom: '35px', borderRadius: "15px", color: mode === 'dark' ? 'white' : 'black', backgroundColor: mode === 'dark' ? '#282828' : 'white' }}
           ></textarea>
         </div>
-        <div style={{ textAlign: "left" }}>
-          <button className="btn btn-primary mx-2 my-2" style={{ backgroundColor: "#c653c6" }} onClick={handelUpclick}>Convert to uppercase</button>
-          <button className="btn btn-primary mx-2 my-2" style={{ backgroundColor: "#ff4d94" }} onClick={handellowclick}>Convert to lowercase</button>
-          <button className="btn btn-primary mx-2 my-2" style={{ backgroundColor: "#118a7e" }} onClick={handelextraspace}>Remove extra space</button>
-          <button className="btn btn-primary mx-2 my-2" style={{ backgroundColor: "#4654f6" }} onClick={handleCopy}>Copy Text</button>
-          <button className="btn btn-primary mx-2 my-2" style={{ backgroundColor: "#666699" }} onClick={handelClearclick}>Clear</button>
+        <div style={{ textAlign: "left" ,marginBottom: '35px' }}>
+          <button className="btn btn-primary mx-2 my-2" style={{ backgroundColor: "#0d66db" }} onClick={handelUpclick}>Convert to uppercase</button>
+          <button className="btn btn-primary mx-2 my-2" style={{ backgroundColor: "#0d66db" }} onClick={handellowclick}>Convert to lowercase</button>
+          <button className="btn btn-primary mx-2 my-2" style={{ backgroundColor: "#0d66db" }} onClick={handelextraspace}>Remove extra space</button>
+          <button className="btn btn-primary mx-2 my-2" style={{ backgroundColor: "#0d66db" }} onClick={handleCopy}>Copy Text</button>
+          <button className="btn btn-primary mx-2 my-2" style={{ backgroundColor: "#0d66db" }} onClick={handelClearclick}>Clear</button>
         </div>
         <div className="container my-3" style={{ textAlign: "left", color: mode === 'dark' ? 'white' : 'black' }} >
           <h2>Summary:</h2>
